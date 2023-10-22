@@ -1,6 +1,6 @@
 public class Endereco {
     private String cep;
-
+// Classe própria para o endereço, para organizar na hora do uso da API de consulta de CEP
     public Endereco(String cep, String logradouro,
                     String numeroResidencia, String bairro, String localidade, String uf) {
         this.cep = cep;
