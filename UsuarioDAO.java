@@ -1,9 +1,9 @@
 import java.sql.*;
 
 public class UsuarioDAO {
-    private final String url = "jdbc:postgresql://localhost:5432/postgres";
-    private final String user = "postgres";
-    private final String password = "468970";
+    private final String url = "jdbc:postgresql://localhost:5432/seu-bd";
+    private final String user = "seu-usuario";
+    private final String password = "sua-senha";
 
     public void inserirUsuario(CadastroUsuario usuario) {
         String query = "INSERT INTO usuarios (nome, sobrenome, telefone, email, senha, data_nascimento, cpf, cep, logradouro, numero_residencia, bairro, cidade, estado) " +
