@@ -1,6 +1,6 @@
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
+//Classe para encriptografar a senha antes de registrar no banco de dados
 public class EncriPass {
 
     public static String hashPassword(String password) {
