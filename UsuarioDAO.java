@@ -10,7 +10,7 @@ public class UsuarioDAO {
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         try (Connection connection = DriverManager.getConnection(url, user, password)) {
             connection.setAutoCommit(false); // Desativar o autoCommit
-
+            // o autoCommit foi desativado porque ao executar o código compilado, os dados não estavam sendo enviados para o BD, manualmente não ocorreu esse problema
             try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
                 preparedStatement.setString(1, usuario.getNome());
                 preparedStatement.setString(2, usuario.getSobrenome());
